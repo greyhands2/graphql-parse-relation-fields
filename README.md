@@ -16,7 +16,7 @@ npm i graphql-parse-relation-fields
 ```
 
 
-Example of Graphql Resolver
+Example of a Graphql Resolver Function
 
 ```javascript
 const gprf = require("graphql-parse-relation-fields");
@@ -101,7 +101,7 @@ Result
 }
 ```
 
-Database query results
+Database Query Results
 
 ```json
 {
