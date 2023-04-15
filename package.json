@@ -1,5 +1,5 @@
 {
-  "name": "graphql-parse-relations-fields",
+  "name": "graphql-parse-relation-fields",
   "version": "1.0.1",
   "description": "This is a package that helps you sort out your graphql client query fields so they can be used for relational or non-relational(scalar) sql database queries",
   "main": "index.js",
@@ -8,11 +8,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/greyhands2/graphql-parse-relations-fields.git"
+    "url": "git+https://github.com/greyhands2/graphql-parse-relation-fields.git"
   },
   "keywords": [
     "gprf",
-    "graphql-parse-relations-fields",
+    "graphql-parse-relation-fields",
     "graphql-parse-relations",
     "graphql",
     "graphql-yoga",
@@ -27,7 +27,7 @@
   "author": "Osagie Osemwota",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/greyhands2/graphql-parse-relations-fields/issues"
+    "url": "https://github.com/greyhands2/graphql-parse-relation-fields/issues"
   },
-  "homepage": "https://github.com/greyhands2/graphql-parse-relations-fields#readme"
+  "homepage": "https://github.com/greyhands2/graphql-parse-relation-fields#readme"
 }
