@@ -163,14 +163,6 @@ Database query results
       }
     ]
   }
-}{
-  "profile": {
-    "firstName": {},
-    "lastName": {},
-    "middleName": {}
-  },
-  "email": {},
-  "id": {}
 }
 
 ```
