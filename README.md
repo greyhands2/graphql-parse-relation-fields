@@ -62,35 +62,34 @@ users {
 
 Result
 
-```javascript
+```json
 {
- select:
- {
-  id:true,
-  name:true,
-  email:true,
-  posts:{
-   select:{
-    title:true,
-    body:true,
-    author:{
-     select:{
-     name:true,
-     links:{
-      select:{
-       text:true
+ "select":{
+ "id":true,
+ "name":true,
+ "email":true,
+ "posts":{
+  "select":{
+   "title":true,
+   "body":true,
+   "author":{
+    "select":{
+    "name":true,
+    "links":{
+     "select":{
+      "text":true
       }
      }
     }
    }
   }
  },
- comments:{
-  select:{
-   text:true
+ "comments":{
+  "select":{
+   "text":true
+   }
   }
  }
-}
 }
 ```
 
@@ -101,7 +100,7 @@ Result
 
 
 
-database query results
+Database query results
 
 ```json
 {
