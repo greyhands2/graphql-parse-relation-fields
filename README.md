@@ -101,7 +101,23 @@ const Query = {
      let opArgs = {};
      /****
      the variable type refers to the relation query call type
-     you want to use example it could be "select" or "include"
+     you want to use, for example, it could be "select" or "include"
+
+
+  example: 
+  {
+    select: {
+      name: true,
+      email:true,
+      posts:{
+        select:{
+         title: true,
+         body: true
+        }
+      }
+
+    }
+  }
      ****/
      let relationType = "select"
      let queryFields = gprf({info, dbRelationalFields, type:relationType})
