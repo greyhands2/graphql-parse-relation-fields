@@ -1,12 +1,24 @@
-```javascript
+
+
 # graphql-parse-relation-fields
+
 This is a package that helps you sort out your graphql client query fields so they can be used for relational or non-relational(scalar) sql database querie.
+
+
 
 ## Usage
 
+Installation
+
+```
+npm i graphql-parse-relation-fields
+
+```
+
+
 Example of Graphql Resolver
 
-
+```javascript
 const gprf = require("graphql-parse-relation-fields");
 //the array dbRelationFields contains all the schema fields that are in relation //to other schemas, these would be called by the client in the query object
 const dbRelationFields = ["posts", "author", "comments", "links"];
@@ -29,8 +41,6 @@ const Query = {
     }
 }
 ```
-
-
 
 Query
 
@@ -57,8 +67,6 @@ users {
   
  }
 ```
-
-
 
 Result
 
@@ -92,13 +100,6 @@ Result
  }
 }
 ```
-
-
-
-
-
-
-
 
 Database query results
 
