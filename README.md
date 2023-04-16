@@ -1,6 +1,6 @@
 # graphql-parse-relation-fields
 
-This is a package that helps you sort out your graphql client requested fields into a neat Javascript object and format so they can be used for a  [Prisma 2](https://www.prisma.io/docs/concepts/components/prisma-schem) relational or non-relational(scalar) sql database query.
+This is a package that helps you sort out your graphql client requested fields into a neat Javascript object and format so they can be used for a  [Prisma ](https://www.prisma.io/docs/concepts/components/prisma-schem) relational or non-relational(scalar) sql database query.
 
 
 
@@ -16,7 +16,7 @@ npm i graphql-parse-relation-fields
 ```
 
 
-An Example of a [ Prisma 2](https://www.prisma.io/docs/concepts/components/prisma-schem) Schema Below
+An Example of a [ Prisma ](https://www.prisma.io/docs/concepts/components/prisma-schem) Schema Below
 
 
 schema.prisma
