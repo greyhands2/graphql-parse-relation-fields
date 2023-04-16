@@ -124,7 +124,7 @@ let queryFields = gprf({info, dbRelationalFields, type:relationType});
 
 The info variable
 
-**This is a parameter in the Graphql's resolver function as shown below, it contains details about the fields requested by the client user but in a format that would be useless to prisma**
+**This is a parameter in the Graphql's resolver function as shown below, it contains details about the fields requested by the client user but in a format that would be useless to prisma hence the need for this package**
 
 ```javascript
 const Query = {
@@ -137,16 +137,14 @@ const Query = {
 
 ```
 
-```javascript
 
-```
 
 The dbRelationalFields variable
 
-**This is an array of strings that should typically contain all the relational(non-scalar) fields across the schemas in your project for example a user schema could have posts, comments, links , etc as relational fields. A post schema too could also have author and comments as it's own relational fields. An Example below**
+**This is an array of strings that should typically contain all the relational(non-scalar) fields across the schemas in your project, for example, a user schema could have posts, comments, links , etc as relational fields. A post schema too could also have author and comments as it's own relational fields.  So also a comment schema would have author and post relaitonal fields. An Example below**
 
 ```javascript
-const dbRelationFields = ["posts", "author", "comments", "links"];
+const dbRelationFields = ["posts", "author", "comments", "links", "post"];
 ```
 
 
@@ -156,7 +154,7 @@ The type variable
 **This basically allows you to choose the  [prisma relational query type API](https://www.prisma.io/docs/concepts/components/prisma-client/relation-querie) you want to use which could be "include" or "select"**
 
 
-An example of the returned result of the package's function call
+An example of the returned result of the package's function call where the type variable passed was "select"
 
 ```javascript
 {
