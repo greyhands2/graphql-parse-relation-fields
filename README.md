@@ -141,7 +141,7 @@ const Query = {
 
 The dbRelationalFields variable
 
-**This is an array of strings that should typically contain all the relational(non-scalar) fields across the schemas in your project, for example, a user schema could have posts, comments, links , etc as relational fields. A post schema too could also have author and comments as it's own relational fields.  So also a comment schema would have author and post relaitonal fields. An Example below**
+**This is an array of strings that should typically contain all the relational(non-scalar) fields across the schemas in your project, for example, a user schema could have posts, comments, links , etc as relational fields. A post schema too could also have author and comments as it's own relational fields.  So also a comment schema would have author and post relational fields. An Example below**
 
 ```javascript
 const dbRelationFields = ["posts", "author", "comments", "links", "post"];
