@@ -81,14 +81,12 @@ model Link {
 
 ```
 
-Graphql Playground / Graphiql Query Example
+Graphql Playground / Graphiql Query Example Now With Support for Fragments
 
 ```graphql
+
 users {
-    id
-    name
-    email
-  
+    ...UserBasicInfo
     posts {
       title
       body
@@ -105,9 +103,13 @@ users {
       }
   
  }
+
+fragment UserBasicInfo on Users {
+    id
+    name
+    email
+}
 ```
-
-
 
 **Take note that the package's function call takes an object as an argument containing keys : info, dbRelationalFields and type and then it returns an object in a format that the prisma query can accept**
 
@@ -119,8 +121,6 @@ const grpf = require("graphql-parse-relation-fields");
 let queryFields = gprf({info, dbRelationalFields, type:relationType});
 
 ```
-
-
 
 The info variable
 
@@ -137,8 +137,6 @@ const Query = {
 
 ```
 
-
-
 The dbRelationalFields variable
 
 **This is an array of strings that should typically contain all the relational(non-scalar) fields across the schemas in your project, for example, a user schema could have posts, comments, links , etc as relational fields. A post schema too could also have author and comments as it's own relational fields.  So also a comment schema would have author and post relational fields. An Example below**
@@ -147,12 +145,9 @@ The dbRelationalFields variable
 const dbRelationFields = ["posts", "author", "comments", "links", "post"];
 ```
 
-
-
 The type variable
 
 **This basically allows you to choose the  [prisma relational query type API](https://www.prisma.io/docs/concepts/components/prisma-client/relation-querie) you want to use which could be "include" or "select"**
-
 
 An example of the returned result of the package's function call where the type variable passed was "select"
 
