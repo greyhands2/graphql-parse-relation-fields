@@ -1,6 +1,6 @@
 {
   "name": "graphql-parse-relation-fields",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "This is a package that helps you sort out your graphql client query fields so they can be used for relational or non-relational(scalar) sql database queries",
   "main": "index.js",
   "scripts": {
