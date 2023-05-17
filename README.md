@@ -104,7 +104,7 @@ users {
   
  }
 
-fragment UserBasicInfo on Users {
+fragment UserBasicInfo on User {
     id
     name
     email
