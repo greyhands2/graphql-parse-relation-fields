@@ -4,7 +4,7 @@ const objectFactory=({arr, dbRelationalFields, type})=>{
         
         let selection = arr[index]
         
-        if(selection.kind === "FragmentSpread") continue;
+        if(selection.kind === "FragmentSpread" || selection["name"]["value"] === '__typename') continue;
         let currentField = selection["name"]["value"];
         
         if(!!dbRelationalFields.includes(currentField)===false){
